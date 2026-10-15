@@ -18,6 +18,10 @@ Requires [uv](https://docs.astral.sh/uv/) (which provides `uvx`).
 claude plugin install tokio-ai --marketplace Kuzi-DEV/tokio-plugin
 ```
 
+The first start downloads `tokio-ai` and about 40 dependencies (a few minutes on a slow
+connection). If Claude Code reports that the `tokio` server failed to start, wait a minute
+and run `/mcp` to reconnect; later starts are instant.
+
 Then ask, for example: *"Test 5, 20 and 50 day momentum on QQQ with TokIO against holding QQQ."*
 
 ## What's inside
