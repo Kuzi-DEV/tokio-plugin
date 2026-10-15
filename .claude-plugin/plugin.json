@@ -1,0 +1,14 @@
+{
+  "name": "tokio-ai",
+  "displayName": "TokIO",
+  "version": "0.7.0",
+  "description": "Is your backtest real? Honest statistics for trading research: Deflated Sharpe, overfitting, lookahead and market-relative checks, with a session ledger that corrects every verdict for everything you tried.",
+  "author": {
+    "name": "Kuzi-DEV",
+    "url": "https://github.com/Kuzi-DEV"
+  },
+  "homepage": "https://kuzi-dev.github.io/Tokio-ai/",
+  "repository": "https://github.com/Kuzi-DEV/tokio-plugin",
+  "license": "MIT",
+  "keywords": ["backtesting", "trading", "statistics", "quant", "deflated-sharpe", "overfitting", "options", "volatility"]
+}

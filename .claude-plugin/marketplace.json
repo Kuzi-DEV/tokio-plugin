@@ -1,0 +1,15 @@
+{
+  "name": "kuzi-dev",
+  "description": "TokIO: honest statistics for trading research",
+  "owner": {
+    "name": "Kuzi-DEV",
+    "url": "https://github.com/Kuzi-DEV"
+  },
+  "plugins": [
+    {
+      "name": "tokio-ai",
+      "source": "./",
+      "description": "Is your backtest real? Checks strategies against luck, the market and lookahead, correcting for every test in the session."
+    }
+  ]
+}
