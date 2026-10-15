@@ -1,5 +1,7 @@
 # TokIO for Claude: is your backtest real?
 
+*TokIO (Tokio AI) is a trading-research statistics tool. It is not affiliated with the Rust `tokio` async runtime.*
+
 TokIO checks trading research for the three things that make most backtests lie:
 **luck** (trying many ideas and keeping the best), **market drift** (a long-only rule
 "works" because the market rose) and **lookahead** (a signal that peeks at the future).
