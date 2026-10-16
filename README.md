@@ -12,9 +12,29 @@ strategy variant checked in your session, and each verdict is corrected for all 
 If Claude tries fifteen ideas and reports the one that "worked", the verdict already
 knows about the other fourteen.
 
+## What you can ask
+
+- *"Test 5, 20 and 50 day momentum on QQQ with TokIO, against simply holding QQQ."*
+- *"Here's my backtest CSV with one column per parameter set. Is the best one real?"*
+- *"I bet on these 400 Kalshi contracts at these prices. Do I have an edge, or was it luck?"*
+- *"Show me TSLA's implied-volatility surface."*
+- *"How many strategies have we tried this session?"*
+
+## A real example
+
+Five classic moving-average crossovers on SPY, 2005-2026. Tested the usual way (did it
+make money?), all five look highly significant. Tested the way TokIO does it by default
+(did the timing beat holding SPY at the same average exposure?), none do: the best has
+p = 0.79. Each rule made +240% to +576% while simply holding SPY made +861%.
+
 ## Install
 
-Requires [uv](https://docs.astral.sh/uv/) (which provides `uvx`).
+Requires [uv](https://docs.astral.sh/uv/) (which provides `uvx`) on the machine where the
+tools run. Works in Claude Code and in Cowork sessions on your computer; in claude.ai chat
+only the skill loads, because the tools run locally.
+
+From the Claude directory, add TokIO from **Customize > Plugins**. In Claude Code you can
+also install it from this repository:
 
 ```
 claude plugin install tokio-ai --marketplace Kuzi-DEV/tokio-plugin
@@ -23,8 +43,6 @@ claude plugin install tokio-ai --marketplace Kuzi-DEV/tokio-plugin
 The first start downloads `tokio-ai` and about 40 dependencies (a few minutes on a slow
 connection). If Claude Code reports that the `tokio` server failed to start, wait a minute
 and run `/mcp` to reconnect; later starts are instant.
-
-Then ask, for example: *"Test 5, 20 and 50 day momentum on QQQ with TokIO against holding QQQ."*
 
 ## What's inside
 
